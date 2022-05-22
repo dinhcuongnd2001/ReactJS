@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js"></script>  -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <title>ReactJS</title>
+</head>
+<body>
+
+    <div class="root"></div>
+
+    <script>
+        // h1Dom = document.createElement('h1')
+        // Object.assign(h1Dom,{
+        //     title: 'hello',
+        //     className: 'heading',
+        //     innerHTML: 'Hello Guys!',
+        //     // style.backgroundColor: 'blue',
+        //     // color: 'red'
+        // })
+        // document.body.appendChild(h1Dom)
+
+        // // React  => React-DOM
+        // // React.creatElement(type, props, children, ... n-children)
+        // const h1React = React.createElement('h1',{
+        //     title: 'hello',
+        //     className: 'heading',
+        // }, 'Hello Guys!')
+        // // h1React = 
+
+        // console.log(h1React)
+
+        /* creat Li*/
+        
+        // ulDOM = document.createElement('ul');
+        // liDOM1 = document.createElement('li')
+        // liDOM1.innerHTML = 'JavaScript'
+        // liDOM2 = document.createElement('li')
+        // liDOM2.innerHTML = 'ReacJS'
+        // ulDOM.appendChild(liDOM1)
+        // ulDOM.appendChild(liDOM2)
+        // ulDOM.style = 'color: red; font-size: 30px'
+        // console.dir(ulDOM)
+        // document.body.appendChild(ulDOM)    
+        // React
+        
+        // ulReact = React.createElement(
+        //     'ul',
+        //     {
+        //         id:'ul-li',
+        //         style: 'color:red; font-size: 30px'
+        //     },
+        //     React.createElement('li',null, 'JavaScipt'),
+        //     React.createElement('li',null, 'React')
+        // )
+        
+        // divDOM = document.createElement('div')
+        // divDOM.classname = 'post-item'
+        // h2DOM = document.createElement('h2')
+        // Object.assign(h2DOM,{
+        //     title:'Hoc React',
+        //     innerHTML: 'Hoc React'
+        // })
+
+        // pDOM =  document.createElement('p')
+        // pDOM.innerHTML= 'Hoc React tu co ban den nang cao'
+
+        // divDOM.appendChild(h2DOM)
+        // divDOM.appendChild(pDOM)
+        // document.body.appendChild(divDOM)
+
+        // react
+        const divReact = React.createElement(
+            'div',
+            {
+            classname: 'post-item'
+            },
+            React.createElement(
+                'h2', 
+                {
+                    title: 'Hoc React',  
+                }, 
+                'Hoc React')
+            ,
+            React.createElement('p',null,'Hoc React tu co ban den nang cao'))
+        // console.log(divReact)
+        const root = document.querySelector('.root')
+        const rootParent = ReactDOM.createRoot(root)
+        rootParent.render(divReact)
+    </script>
+</body>
+</html>

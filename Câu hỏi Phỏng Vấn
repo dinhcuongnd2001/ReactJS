@@ -1,0 +1,37 @@
+1.SPA/MPA là gì?
+    SPA: Single-Page Application (CSR: Client Side Rendering)
+        - ReactJS là một trong những thư viện tạo ra SPA
+        - Các trang lớn sử dụng SPA: Google, Facebook, Twitter
+    MPA: Multi-Page Application (SSR: Server Side Rendering)
+
+    #Khác nhau:
+    SPA: 
+        - Được cho là cách tiếp cận hiện đại hơn
+        - Không yêu cầu tải lại trang trong quá trình sử dụng
+    MPA:
+        - Là cách tiếp cận cổ điển
+        - Tải lại trang trong quá trình sử dụng (click vào các đường link, chuyển sang,...)
+
+    # So Sánh 
+    SPA:
+        - Nhanh hơn khi xử dụng
+            Phần lớn tài nguyên được tải trong lần đầu (Do đó lần đâu ko biết tối ưu có thể bị chậm)
+            Trang chỉ tải thêm dữ liệu mới khi cần
+    MPA:
+        - Chậm hơn khi sử dụng 
+            Luôn phải tải lại toàn bộ trang khi truy cập hoặc chuyển hướng
+
+    # Bóc tách
+    SPA có phần Front-end riêng biệt
+    MPA: Front-End & Back-End phụ thuộc nhau nhiều hơn, được đặt cùng trong một dự án
+
+    #SEO (Search Engine Optimization):
+    SPA không thân thiện với SEO như MPA
+    Trải nghiệm trên thiết bị di động tốt hơn
+
+    #UX (Uer Experience)
+
+2. JSX là gì 
+    JSX: Javascript XML
+    muốn dùng JSX để chuyển đổi từ JS thì dùng dấu ngoặc sau {}S
+     

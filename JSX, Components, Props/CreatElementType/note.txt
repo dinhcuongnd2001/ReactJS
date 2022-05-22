@@ -1,0 +1,16 @@
+React: chia components nhỏ từ các bài toán lớn
+React element types: string, function/class
+
+Props
+    - React element
+        +) Sứ dụng props giống như sử dụng giống như atrribute của thẻ HTML.
+        + 2 props class,for chuyển thành =>> className, htmlfor
+        +) Phải tuân theo các quy tắc có
+    - React Conponents
+        +) Sử dụng props giống như đối số của function
+        +) Tự do đặt tên cho props
+            . Đặt tên theo camelCase
+            . Có thể bao gồm dấu gạch ngang
+    - Chú ý:
+        - Props 'key' là props đặc biệt
+        - Props cơ bản là đối số của Components 

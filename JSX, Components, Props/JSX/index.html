@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <script src="./main.js"></script> -->
+    <script type="text/babel">
+        // const divReact = React.createElement(
+        //     'ul',
+        //     null,
+        //     React.createElement('li', null, 'JS'),
+        //     React.createElement('li', null, 'HTML')
+        // )
+        // rootParent = ReactDOM.createRoot(document.querySelector('#root'))
+        // rootParent.render(divReact)
+
+        // const ul = <ul>
+        //     <li>JS</li>
+        //     <li>ReactJS</li>
+        // </ul>
+        // const root = document.querySelector('#root')
+        // const rootParent = ReactDOM.createRoot(root)
+        // rootParent.render(ul);
+
+        const courses = [
+            {
+                name : 'HTML-JS'
+            },
+            {
+                name: 'React'
+            },
+            {
+                name: 'Responsive web Design'
+            }
+        ]
+        const ul = 
+                (<ul>
+                    {
+                        courses.map(value => <li>{value.name}</li>) 
+                    }
+                </ul>)
+        var root = document.getElementById('root');
+        var rootParent = ReactDOM.createRoot(root);
+        rootParent.render(ul)
+
+    // const reactCourse = 'ReactJS';
+    // const courses = [
+    //   {
+    //     name:"HTML,CSS"
+    //   },
+    //   {
+    //     name:"Responsive web design"
+    //   },
+    //   {
+    //     name:"ReactJS"
+    //   }
+    // ]
+    // const ul = <ul>
+    //     {
+    //       courses.map(x => <li>{x.name}</li>)
+    //     }
+    //   </ul>
+    //   ReactDOM.render(ul,document.getElementById('root'));
+    // </script>
+</body>
+
+</html>
