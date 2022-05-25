@@ -11,24 +11,7 @@
 </head>
 <body>
     <div id="root"></div>
-    <!-- <script src="./main.js"></script> -->
     <script type="text/babel">
-        // const divReact = React.createElement(
-        //     'ul',
-        //     null,
-        //     React.createElement('li', null, 'JS'),
-        //     React.createElement('li', null, 'HTML')
-        // )
-        // rootParent = ReactDOM.createRoot(document.querySelector('#root'))
-        // rootParent.render(divReact)
-
-        // const ul = <ul>
-        //     <li>JS</li>
-        //     <li>ReactJS</li>
-        // </ul>
-        // const root = document.querySelector('#root')
-        // const rootParent = ReactDOM.createRoot(root)
-        // rootParent.render(ul);
 
         const courses = [
             {
@@ -41,35 +24,29 @@
                 name: 'Responsive web Design'
             }
         ]
-        const ul = 
-                (<ul>
-                    {
-                        courses.map(value => <li>{value.name}</li>) 
-                    }
-                </ul>)
-        var root = document.getElementById('root');
-        var rootParent = ReactDOM.createRoot(root);
-        rootParent.render(ul)
 
-    // const reactCourse = 'ReactJS';
-    // const courses = [
-    //   {
-    //     name:"HTML,CSS"
-    //   },
-    //   {
-    //     name:"Responsive web design"
-    //   },
-    //   {
-    //     name:"ReactJS"
-    //   }
-    // ]
-    // const ul = <ul>
-    //     {
-    //       courses.map(x => <li>{x.name}</li>)
-    //     }
-    //   </ul>
-    //   ReactDOM.render(ul,document.getElementById('root'));
-    // </script>
+        const ul = (
+            <ul>
+                {
+                    courses.map( (item) => 
+                        (<li>{item.name}</li>)
+                    )
+                }    
+            </ul>)
+
+        var root = ReactDOM.createRoot(document.getElementById('root'))
+        root.render(ul)
+
+        // const ul = 
+        //         (<ul>
+        //             {
+        //                 courses.map(value => <li>{value.name}</li>) 
+        //             }
+        //         </ul>)
+        // var root = document.getElementById('root');
+        // var rootParent = ReactDOM.createRoot(root);
+        // rootParent.render(ul)
+    </script>
 </body>
 
 </html>

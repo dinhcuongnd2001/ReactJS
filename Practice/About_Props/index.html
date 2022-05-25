@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+        #wrapper{
+            
+            color: black;
+            padding: 10px;
+            background-color: #333;
+            max-width: 150px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        button, a{
+            font-size: 24px;
+            color: aliceblue;
+            text-decoration: none;
+            background-color: #333;
+            border: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        function Button({title, href, onClick}) {
+            let Conponent = 'button'
+            const props = {}
+            if(href){
+                Conponent = 'a'
+                props.href = href
+            }
+            if(onClick){
+                props.onClick = onClick
+            }
+            return (
+                <Conponent {...props}>{title}</Conponent>
+            )
+        }
+
+        function App() {
+            return (
+                <div id='wrapper'>
+                    <Button 
+                    title = 'Click Me!'
+                    href = 'https://facebook.com/dnc.cuong/'
+                    onClick = {() => console.log(Math.random())}
+                    />
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App/>, document.getElementById('app'))
+    </script>
+</body>
+</html>
