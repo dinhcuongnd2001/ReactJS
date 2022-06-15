@@ -10,17 +10,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="root"></div>
     <script type="text/babel">
-        function Button({children}) {
-            return (
-                // <div>
-                //     <label>{title}</label>
-                //     <input {...props} />
-                // </div>
-                <button>{children}</button>
-            )
-        }
+
+        const course = [
+            {name: 'HTML, CSS'},
+            {name: 'reponsive web design'},
+            {name: 'ReacJS'},
+            {name: 'Angular'},
+            {name: 'You have done'}
+        ]
+
+        const ul = 
+        <ul>
+            {
+                course.map( (item, index) => {
+                    return <li key = {index}> {item.name} </li>
+                } )
+            }
+        </ul>
+
+        console.log(ul)
 
         function App() 
         {
@@ -30,7 +40,7 @@
                 </div>
             )
         }
-        ReactDOM.render(<App/>, document.getElementById('app'))
+        ReactDOM.render(ul, document.getElementById('root'))
     </script>
 </body>
 </html>
