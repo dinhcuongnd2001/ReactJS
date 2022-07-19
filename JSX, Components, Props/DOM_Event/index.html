@@ -13,39 +13,55 @@
     <div id="app"></div> 
     <script type="text/babel">
         
-        function Button({title, href, onClick})
-        {   
-            let Conponent = 'button'
-            const props = {}
+        // function Button({title, href, onClick})
+        // {   
+        //     let Conponent = 'button'
+        //     const props = {}
             
-            if(href) {
-                Conponent = 'a'
-                props.href = href
-            }
+        //     if(href) {
+        //         Conponent = 'a'
+        //         props.href = href
+        //     }
 
-            if(onClick) {
-                props.onClick = onClick
-            }
-            return (
-                <Conponent {...props}>{title}</Conponent>
-            )
-        }
+        //     if(onClick) {
+        //         props.onClick = onClick
+        //     }
+        //     return (
+        //         <Conponent {...props}>{title}</Conponent>
+        //     )
+        // }
+
+        // function App() {
+        //     return (
+        //         <div id="wrapper">
+        //             <Button 
+        //                 title= 'Click Me!'
+        //                 href = 'https://facebook.com/dnc.cuong/'
+        //                 onClick = {() => console.log(Math.random())}
+        //             />
+        //         </div>
+        //     )
+        // }
+        
+        // ReactDOM.render(<App />, document.getElementById('app'))
+        // var root = ReactDOM.createRoot(document.getElementById('app'))
+        // root.render(App)
 
         function App() {
             return (
-                <div id="wrapper">
-                    <Button 
-                        title= 'Click Me!'
-                        href = 'https://facebook.com/dnc.cuong/'
-                        onClick = {() => console.log(Math.random())}
-                    />
+                <div id ="wrapper">
+                    <button className = 'btn'>
+                        Click Me!
+                    </button>
                 </div>
             )
         }
-        
-        ReactDOM.render(<App />, document.getElementById('app'))
-        // var root = ReactDOM.createRoot(document.getElementById('app'))
-        // root.render(App)
+
+        // const a = <h1 className = 'heading'>Hello</h1>
+
+        var root = ReactDOM.createRoot(document.getElementById('app'));
+        // root.render(a);
+            
     </script>
 </body>
 </html>
