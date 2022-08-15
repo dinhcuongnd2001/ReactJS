@@ -33,5 +33,84 @@
 
 2. JSX là gì 
     JSX: Javascript XML
-    muốn dùng JSX để chuyển đổi từ JS thì dùng dấu ngoặc sau {}S
+    muốn dùng JSX để chuyển đổi từ JS thì dùng dấu ngoặc sau {}
+3. NPM, NPX, YARN là gì.
+	- NPM:
+		+) KHi cài thư viện với NPM có 2 phạm vi cài:
+		1: Project Scope (cài vào dự án cụ thể)
+		để cài thêm thư viện: 
+		npm istall/i react react-dom --save(nếu npm trên version 5 thì ko cần --save mà sẽ tự lưu vào Defendence))
+		npm install --save-dev react react-dom => devDependencies
+		npm i -D react react-dom => devDependencies
+		
+		xóa bỏ thư viện:
+		npm uninstall react react-dom
+		2: Global Scope (cài vào trực tiếp máy tính)
+			- npm i --global create-react-app
+			- npm i -g create-react-app
+	 - NPX:
+		Hỗ trợ thực thi các thưc viện (cài đặt ...)
+		Ưu điểm: không phải cài thêm các thư viện vào máy khi không có trong project hay máy
+	- YARN:
+Câu hỏi phỏng vấn: YARN và NPM khác gì nhau: => cơ chế tạo ra khác biệt về performance, cơ chế cache (https://www.sitepoint.com/yarn-vs-npm/)
+	NPM: +) theo cơ chế tuần tự, khi cài nhiều thư viện cùng lúc thì nó sẽ cài tuần tự từng thằng 1
+	     +) 
+	YARN: +) cài song song các thư viện cùng lúc được
+		+)  Có thêm cơ chế cache Khi các thư viện được tải về thì sẽ được lưu vào trong trong một phân vùng do YARN tạo ra để phục vụ việc reInstall. trước khi install thì nó sẽ kiểm tra nếu có thì nó sẽ lấy ra, không thì nó sẽ downlaod về. Nhược điểm là gây tốn bộ nhớ lưu trữ
+
+
+--------------------------------- 4. Hook là gì? ------------------------
+Note: Hook chỉ dùng được trong function Component
+required: import { hookName } from 'react';
+	+) useState : Khi muốn dữ liệu thay đổi thì dao diện tự động được cập nhật (Render lại theo dữ liệu)
+	const [statte, setState] = useState(initState)
+	Note: Component được re-render sau khi 'set-State'
+		Initial state chỉ dùng cho lần đầu,
+		Initial state với callback? => giải quyết bài toán ko phải xử lý logic cho việc xử lý giá trị ban đầu
+		Set state là thay thế state bằng giá trị mới
+
+------------------------------------- 5.Tow-way binding trong React -------------------
+Ràng buộc 2 chiều. => xử lý form
+practice: Làm trắc nghiệm với tow-way binding
+
+	
+
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
